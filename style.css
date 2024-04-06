@@ -83,7 +83,7 @@ ul.pallini {
 }
 }
 
-.col-sm-4 .col-md-3 .col-lg .p-1{
+.col-sm-4.col-md-3.col-lg.p-1{
     overflow: hidden;
 }
 
@@ -94,8 +94,7 @@ ul.pallini {
  .zoom:hover{
      transform: scale(1.2);
      opacity: 0.8; 
-     border-radius: 10px;
-     border: solid 2px #ff0000;
+
      }
  
 
