@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    color: #FAFAFA;
+    background-color: #141414;
+}
+.navbarcolor {
+    background-color: #141414 !important;
+    color: white;
+} 
+.navbar-toggler-icon {
+    font-size: 20px;
+}
+
+.navbar-nav li.nav-item:hover {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: white;
+  }
+
+.sethamburger{
+    color:#FAFAFA;
+}
+
+
+
+.sethamburger:hover{
+    color: #FAFAFA;
+}
+
+.collapse ul li a {
+    color: #929091
+}
+
+.collapse ul li a:active, .collapse ul li a:focus {
+color: #FAFAFA !important;
+
+}
+.logo {
+    width: 90px;
+    height: 40px;
+}
+
+
+ul.pallini {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+
+  /* dopo nav bar*/
+
+.setgenres{
+    border: solid 1px #ffffff;
+    background-color: #141414;
+  }
+
+
+.seticon{
+    font-size: 25px;
+}
+
+/*  sezione di immagini */
+
+/* inserisco media query affinchè l'immagine si veda tagliata solo nel caso di visualizzazione con dimensione minima di 992px */
+@media (min-width: 992px) {
+.ritaglia {
+    overflow: hidden;
+}
+
+.ritaglia img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: -50%;
+}
+}
+
+.col-sm-4 .col-md-3 .col-lg .p-1{
+    overflow: hidden;
+}
+
+.zoom {
+    transition: opacity 5s;
+ }
+ 
+ .zoom:hover{
+     transform: scale(1.2);
+     opacity: 0.8; 
+     border-radius: 10px;
+     border: solid 2px #ff0000;
+     }
+ 
+
+.setimg{
+    padding: 0, 3px !important;
+}
+
+
+.invisible{display: none;}
+
+/* animazione testo lampeggiante */
+.text-flicker-in-glow{animation:text-flicker-in-glow 4s linear both 2s}
+@keyframes text-flicker-in-glow{0%{opacity:0}10%{opacity:0;text-shadow:none}10.1%{opacity:1;text-shadow:none}10.2%{opacity:0;text-shadow:none}20%{opacity:0;text-shadow:none}20.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.25)}20.6%{opacity:0;text-shadow:none}30%{opacity:0;text-shadow:none}30.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.5%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}30.6%{opacity:0;text-shadow:none}45%{opacity:0;text-shadow:none}45.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}50%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.45),0 0 60px rgba(255,255,255,.25)}55.1%{opacity:0;text-shadow:none}57%{opacity:0;text-shadow:none}57.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35)}60.1%{opacity:0;text-shadow:none}65%{opacity:0;text-shadow:none}65.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.35),0 0 100px rgba(255,255,255,.1)}75.1%{opacity:0;text-shadow:none}77%{opacity:0;text-shadow:none}77.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.55),0 0 60px rgba(255,255,255,.4),0 0 110px rgba(255,255,255,.2),0 0 100px rgba(255,255,255,.1)}85.1%{opacity:0;text-shadow:none}86%{opacity:0;text-shadow:none}86.1%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}100%{opacity:1;text-shadow:0 0 30px rgba(255,255,255,.6),0 0 60px rgba(255,255,255,.45),0 0 110px rgba(255,255,255,.25),0 0 100px rgba(255,255,255,.1)}}
+
+/* animazione apertura card */
+.scale-in-hor-center{animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94) both}
+.scale-in-hor-center2{animation:scale-in-hor-center .15s cubic-bezier(.25,.46,.45,.94) 2s}
+.scale-in-hor-center3{animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94) 4s}
+@keyframes scale-in-hor-center{0%{transform:scaleX(0);opacity:1}100%{transform:scaleX(1);opacity:1}}
+
+/*  footer */
+.footer{
+    background-color: #141414 !important;
+    color: #929091 !important;
+    font-size: 12px;
+}
+
+.border{
+    border: solid 2px #ffffff;
+    max-width: 125px;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.text-reset:hover{
+    color: #FAFAFA !important;
+}
